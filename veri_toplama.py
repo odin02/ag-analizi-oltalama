@@ -42,3 +42,5 @@ print(f"Düğüm (Makale) Sayısı: {G.number_of_nodes()}")
 print(f"Kenar (Atıf) Sayısı: {G.number_of_edges()}")
 print(f"Ağ Yoğunluğu (Density): {nx.density(G):.4f}")
 print(f"Bileşen Sayısı (Zayıf Bağlantılı): {nx.number_weakly_connected_components(G)}")
+
+nx.write_graphml(G, 'ag_yapisi.graphml')
